@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremiah Uzoma Ogene - Creative Director & Visual Storyteller</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f8f9fa;
+        }
+
+        /* Navigation */
+        nav {
+            background: #1a5f7a;
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a5f7a 0%, #2c3e50 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .hero .tagline {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            opacity: 0.85;
+            line-height: 1.8;
+        }
+
+        .hero .cta {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: white;
+            color: #1a5f7a;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hero .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1a5f7a;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        section .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* About Section */
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            color: #1a5f7a;
+            margin-bottom: 1rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .stat-box .number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1a5f7a;
+        }
+
+        .stat-box .label {
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        /* Featured Project */
+        .featured-project {
+            background: white;
+        }
+
+        .project-showcase {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 3rem;
+            border-radius: 15px;
+            margin: 2rem auto;
+            max-width: 1000px;
+        }
+
+        .project-header {
+            margin-bottom: 2rem;
+        }
+
+        .project-title {
+            font-size: 2rem;
+            color: #1a5f7a;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+
+        .project-meta .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .project-meta .meta-label {
+            font-weight: bold;
+            color: #1a5f7a;
+        }
+
+        .project-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .project-approach {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .project-approach h4 {
+            color: #1a5f7a;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .approach-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .approach-item {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #1a5f7a;
+        }
+
+        .approach-item h5 {
+            color: #1a5f7a;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Image Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            aspect-ratio: 4/5;
+            background: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Services */
+        .services {
+            background: #f8f9fa;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: #1a5f7a;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .service-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-card li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #1a5f7a;
+            font-weight: bold;
+        }
+
+        /* Skills */
+        .skills {
+            background: white;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .skill-category h3 {
+            color: #1a5f7a;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .skill-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .skill-bar {
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #1a5f7a 0%, #2c8ba8 100%);
+            border-radius: 10px;
+            transition: width 1s ease;
+        }
+
+        /* Notable Clients */
+        .clients {
+            background: #f8f9fa;
+        }
+
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .client-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .client-card h4 {
+            color: #1a5f7a;
+            margin-bottom: 0.5rem;
+        }
+
+        .client-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Contact */
+        .contact {
+            background: linear-gradient(135deg, #1a5f7a 0%, #2c3e50 100%);
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .contact-item {
+            padding: 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        .contact-item h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            nav, .hero .cta, .contact {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">JEREMIAH OGENE</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Featured Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Expertise</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>JEREMIAH UZOMA OGENE</h1>
+        <div class="subtitle">Creative Director | Visual Storyteller | AI Innovation Specialist</div>
+        <p class="tagline">Crafting compelling visual narratives for political campaigns, brands, and high-profile clients. Specializing in executive portraiture, creative direction, and AI-driven content innovation.</p>
+        <a href="#contact" class="cta">Let's Create Together</a>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="section-subtitle">Innovative visual storyteller with a passion for authentic narrative through imagery</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Creative Vision Meets Technical Excellence</h3>
+                    <p>With a B.A.Ed in English and extensive experience in high-profile photography, I bring a unique blend of creative storytelling and technical expertise to every project. My work spans political campaign photography, commercial shoots, and brand narratives for prominent figures and organizations across Nigeria.</p>
+                    <p>I specialize in executive portraiture and political branding, creating visual identities that communicate credibility, leadership, and authenticity. My approach combines strategic creative direction with cutting-edge AI tools to deliver compelling content that drives engagement.</p>
+                    <p>Beyond the lens, I'm exploring the intersection of visual arts and technology through AI chatbot development, automation, and backend development—bringing intelligent solutions to creative challenges.</p>
+                </div>
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="number">50+</div>
+                        <div class="label">Projects Completed</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">40%</div>
+                        <div class="label">Client Growth</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">3+</div>
+                        <div class="label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project -->
+    <section class="featured-project" id="work">
+        <div class="container">
+            <h2>Featured Project</h2>
+            <p class="section-subtitle">Political Branding & Executive Portraiture</p>
+
+            <div class="project-showcase">
+                <div class="project-header">
+                    <h3 class="project-title">SRJ 2026 Campaign Photoshoot</h3>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Client:</span>
+                            <span>Dr. Ajibola Basiru (APC National Secretary)</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Role:</span>
+                            <span>Creative Director / Lead Photographer</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Date:</span>
+                            <span>February 2025</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Location:</span>
+                            <span>Osogbo, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="project-description">
+                    Developed and executed the complete visual identity and campaign photography for a high-profile political figure's pre-governorship branding initiative. This comprehensive project focused on portraying credibility, leadership, and approachability through strategic composition, professional lighting design, and meticulous wardrobe coordination.
+                </p>
+
+                <div class="project-approach">
+                    <h4>Creative Approach & Execution</h4>
+                    <div class="approach-grid">
+                        <div class="approach-item">
+                            <h5>Conceptualization</h5>
+                            <p>Developed visual strategy aligned with political messaging, targeting voter demographics and media platforms</p>
+                        </div>
+                        <div class="approach-item">
+                            <h5>Lighting Design</h5>
+                            <p>Orchestrated professional studio and natural lighting setups to create authoritative yet approachable imagery</p>
+                        </div>
+                        <div class="approach-item">
+                            <h5>Wardrobe Direction</h5>
+                            <p>Coordinated multiple outfit changes showcasing traditional, formal, and casual leadership aesthetics</p>
+                        </div>
+                        <div class="approach-item">
+                            <h5>Team Leadership</h5>
+                            <p>Directed specialized photography team ensuring cohesive execution across all campaign materials</p>
+                        </div>
+                        <div class="approach-item">
+                            <h5>Post-Production</h5>
+                            <p>Supervised comprehensive editing workflow optimized for print, digital, and outdoor advertising formats</p>
+                        </div>
+                        <div class="approach-item">
+                            <h5>Strategic Delivery</h5>
+                            <p>Delivered campaign-ready assets for press releases, social media, billboards, and political communications</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 style="margin: 2rem 0 1rem; color: #1a5f7a;">Campaign Portfolio Highlights</h4>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <div>
+                                <strong>Formal Executive Portrait</strong><br>
+                                Traditional attire showcasing cultural authenticity and leadership
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <div>
+                                <strong>Business Professional</strong><br>
+                                Corporate styling emphasizing competence and modern governance
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <div>
+                                <strong>Casual Leadership</strong><br>
+                                Approachable imagery connecting with grassroots voters
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <div>
+                                <strong>Dynamic Action Shot</strong><br>
+                                Energy and forward momentum for campaign materials
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <div>
+                                <strong>Thoughtful Profile</strong><br>
+                                Contemplative expression for editorial and feature coverage
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <div>
+                                <strong>Wide Campaign Shot</strong><br>
+                                Environmental portrait for billboard and outdoor advertising
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem; padding: 1.5rem; background: white; border-radius: 8px;">
+                    <h5 style="color: #1a5f7a; margin-bottom: 1rem;">Project Impact</h5>
+                    <p>Photographs currently featured across internal campaign materials, official press releases, political media platforms, and strategic communications for the 2026 Osun State governorship campaign.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Services & Specializations</h2>
+            <p class="section-subtitle">Comprehensive creative solutions from concept to execution</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📸</div>
+                    <h3>Political & Executive Photography</h3>
+                    <ul>
+                        <li>Campaign photography & branding</li>
+                        <li>Executive portraits & headshots</li>
+                        <li>Event documentation</li>
+                        <li>Media-ready image production</li>
+                        <li>Strategic visual storytelling</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Creative Direction</h3>
+                    <ul>
+                        <li>Brand visual identity development</li>
+                        <li>Campaign strategy & execution</li>
+                        <li>Team leadership & coordination</li>
+                        <li>Concept development & styling</li>
+                        <li>Multi-platform content strategy</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>AI & Automation Solutions</h3>
+                    <ul>
+                        <li>AI chatbot development</li>
+                        <li>Creative prompt generation</li>
+                        <li>Workflow automation</li>
+                        <li>Content optimization tools</li>
+                        <li>Productivity enhancement systems</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Commercial Photography</h3>
+                    <ul>
+                        <li>Product photography</li>
+                        <li>Corporate events</li>
+                        <li>Brand campaigns</li>
+                        <li>Social media content</li>
+                        <li>Editorial shoots</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Studio Management</h3>
+                    <ul>
+                        <li>Operations optimization</li>
+                        <li>Team training & mentoring</li>
+                        <li>Client relations management</li>
+                        <li>Quality control systems</li>
+                        <li>Project coordination</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">✍️</div>
+                    <h3>Content Creation</h3>
+                    <ul>
+                        <li>Social media strategy</li>
+                        <li>Visual storytelling</li>
+                        <li>Brand narrative development</li>
+                        <li>Copywriting & messaging</li>
+                        <li>Multi-channel distribution</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Technical Expertise</h2>
+            <p class="section-subtitle">A comprehensive skill set bridging creativity and technology</p>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Creative & Photography</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Adobe Photoshop & Lightroom</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Creative Direction</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Studio & Event Photography</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Visual Storytelling</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Technology & Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>AI Prompt Generation</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Chatbot Development</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Python & Backend Dev</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>DevOps & Automation</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Leadership & Strategy</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Project Management</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Team Leadership</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Campaign Strategy</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Client Relations</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notable Clients -->
+    <section class="clients">
+        <div class="container">
+            <h2>Notable Clients & Projects</h2>
+            <p class="section-subtitle">Trusted by prominent figures and organizations</p>
+
+            <div class="clients-grid">
+                <div class="client-card">
+                    <h4>Sen. Dr. Ajibola Basiru</h4>
+                    <p>APC National Secretary | 2026 Governorship Campaign Photography</p>
+                </div>
+                <div class="client-card">
+                    <h4>Geo Photography Studio</h4>
+                    <p>Studio Management & Creative Direction | 40% Growth Achievement</p>
+                </div>
+                <div class="client-card">
+                    <h4>The Kelvin Jerry Brand</h4>
+                    <p>Personal Brand Development | Premium Visual Content</p>
+                </div>
+                <div class="client-card">
+                    <h4>Entertainment Sector</h4>
+                    <p>Celebrity Portraits & Event Coverage</p>
+                </div>
+                <div class="client-card">
+                    <h4>Corporate Clients</h4>
+                    <p>Executive Photography & Brand Campaigns</p>
+                </div>
+                <div class="client-card">
+                    <h4>Political Organizations</h4>
+                    <p>Campaign Photography & Visual Strategy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Let's Create Something Extraordinary</h2>
+                <p style="font-size: 1.2rem; margin: 1.5rem 0;">Ready to bring your vision to life? Whether it's a political campaign, commercial project, or brand narrative, I'm here to help you tell your story through compelling visual content.</p>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <a href="mailto:jerryogene@gmail.com">jerryogene@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📱 Phone</h3>
+                        <a href="tel:+2349072030930">+234 907 203 0930</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📍 Location</h3>
+                        <p>Ikoyi, Lagos State, Nigeria</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 3rem;">
+                    <a href="mailto:jerryogene@gmail.com" class="cta">Start a Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Jeremiah Uzoma Ogene. All Rights Reserved.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.8;">Creative Director | Visual Storyteller | AI Innovation Specialist</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate skill bars on scroll
+        const animateSkills = () => {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.width = entry.target.style.width;
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            skillBars.forEach(bar => observer.observe(bar));
+        };
+
+        // Initialize animations when DOM is loaded
+        document.addEventListener('DOMContentLoaded', animateSkills);
+
+        // Add active state to nav on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section[id]');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
